@@ -1,0 +1,5 @@
+{% extends 'home/base.html' %} {% block content %} {% for player in players %}
+<p>Name: {{ player.name }}</p>
+<p>Position: {{ player.position }}</p>
+<p>Goals: {{ player.goals }}</p>
+{% endfor %} {% endblock content %}
