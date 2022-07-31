@@ -1,1 +1,13 @@
-{% extends 'home/base.html' %} {% block content %} {% endblock content %}
+{% extends 'home/base.html' %}
+{% block content %}
+	<main>
+		<div class="space-y-4 px-6">
+			<p class="pt-6 mx-auto text-center w-4/5">
+				Welcome to your home of Fantasy Premier League statistics and analytics. We collect the data and crunch the numbers for you. Making transfer decisions in FPL has never been easier thanks to our interactive dashboards and summary tables. 
+			</p>
+			<hr>
+			<p class="text-center mx-auto">{{ gameweek }} Deadline:</p>
+			<p class="text-center mx-auto">{{ date }} at {{ time }}</p> 
+		</div>
+	</main>
+{% endblock content %}
